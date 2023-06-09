@@ -1,0 +1,31 @@
+<div class="main">
+  <h2>Currency Exchange</h2>
+  <div class="wrapper d-flex">
+    <div class="flex-col">
+      <label>Currency 1:</label>
+      <select [(ngModel)]="selectedCurrency1" (change)="convertCurrency()">
+        <option *ngFor="let currency of currencies" [ngValue]="currency">
+          {{ currency.cc }}
+        </option>
+      </select>
+      <input
+        type="number"
+        [(ngModel)]="currencyValue1"
+        (input)="convertCurrency()"
+      />
+    </div>
+    <div class="flex-col">
+      <label>Currency 2:</label>
+      <select [(ngModel)]="selectedCurrency2" (change)="convertCurrency()">
+        <option *ngFor="let currency of currencies" [ngValue]="currency">
+          {{ currency.cc }}
+        </option>
+      </select>
+      <input
+        type="number"
+        [(ngModel)]="currencyValue2"
+        (input)="convertCurrency()"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.main {
+  height: calc(100vh - 58px);
+  padding: 20px;
+  background: #474747;
+  text-align: center;
+  color: white;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    label {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    select,
+    input {
+      margin: 10px;
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    input {
+      border: none;
+      outline: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .wrapper {
+      padding: 20px;
+      border: 1px solid red;
+      border-radius: 10px;
+    }
+  }
+}
